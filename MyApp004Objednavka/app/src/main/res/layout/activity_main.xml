@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101714"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RIDE / YOUR WAY"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:textColor="#C5F277"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvHeaderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tvoje kolo. Tvoje pravidla."
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#F4F7F2"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vyber model a sestav si výbavu na další dobrodružství."
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="#B5C1B9"
+                android:layout_marginBottom="24dp" />
+
+            <ImageView
+                android:id="@+id/ivBike"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="#EAF0E7"
+                android:padding="16dp"
+                android:src="@drawable/oiz_m10_tr"
+                android:scaleType="fitCenter"
+                android:contentDescription="Ukázka kola Orbea Oiz M10"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/tvOrderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01 / VYBER SVŮJ MODEL"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C5F277"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rgBikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1D2922"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/rbBike1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="Orbea Oiz M10"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="#F4F7F2"
+                    android:buttonTint="#C5F277"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rbBike2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="Orbea Oiz M20"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="#F4F7F2"
+                    android:buttonTint="#C5F277" />
+
+                <RadioButton
+                    android:id="@+id/rbBike3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="Orbea Oiz M30"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="#F4F7F2"
+                    android:buttonTint="#C5F277" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02 / DOLAĎ SI VÝBAVU"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C5F277"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volitelné úpravy podle tvých preferencí."
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="#B5C1B9"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/cbFork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Vylepšená odpružená vidlice"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="#F4F7F2"
+                android:buttonTint="#C5F277" />
+
+            <CheckBox
+                android:id="@+id/cbSaddle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Komfortnější sedlo"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="#F4F7F2"
+                android:buttonTint="#C5F277" />
+
+            <CheckBox
+                android:id="@+id/cbHandleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Vylepšená řídítka"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="#F4F7F2"
+                android:buttonTint="#C5F277" />
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:layout_marginTop="24dp"
+                android:text="Objednat moje kolo"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#101714"
+                android:backgroundTint="#C5F277" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03 / TVOJE OBJEDNÁVKA"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C5F277"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:text="Zatím nemáš vytvořenou objednávku. Vyber model, doplň výbavu a klepni na tlačítko výše."
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="#F4F7F2"
+                android:background="#1D2922"
+                android:padding="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
